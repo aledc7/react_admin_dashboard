@@ -27,6 +27,12 @@ npm install @mui/material @emotion/react @emotion/styled
 npm install @mui/icons-material
 
 npm install recharts
+
+npm install react-router-dom --save
+
+npm install @mui/x-data-grid
+
+
 ```
 _______________________________________
 
