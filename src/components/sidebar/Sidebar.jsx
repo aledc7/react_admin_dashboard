@@ -1,18 +1,21 @@
 import './sidebar.css';
 import { 
     FingerprintSharp, 
-    ThreeDRotation, 
-    Feed,
+    People, 
+    PointOfSale,
     Search,
-    Home,
-    Person,
+    AccessibilityNew,
+    Summarize,
     ManageAccounts,
     MonetizationOn,
     QueryStats,
     Print,
     Build,
+    Equalizer,
+    AddReaction,
+    
 
- } from '@mui/icons-material';
+} from '@mui/icons-material';
 
 
 export default function Sidebar() {
@@ -22,70 +25,82 @@ export default function Sidebar() {
         <div className='sidebar'>
             <div className="sidebarWrapper">
                 <div className="sidebarMenu">
-                    <h3 className="sidebarTitle">Mesa de Ayuda</h3>
+                    <h3 className="sidebarTitle">RRHH</h3>
                     <ul className="sidebarList">
                         <li className="sidebarListItem active">
-                            <Home className='sidebarIcon'/>
-                            Home
+                            <AccessibilityNew className='sidebarIcon'/>
+                            Estados Laborales
                         </li>
                         <li className="sidebarListItem">
                             <FingerprintSharp className='sidebarIcon'/>
-                            Ventas
+                            Inasistencias
                         </li>
                         <li className="sidebarListItem">
-                            <ThreeDRotation className='sidebarIcon'/>
-                            Reportes
+                            <People className='sidebarIcon'/>
+                            Empleados
                         </li>
                     </ul>
                 </div>
                 <div className="sidebarMenu">
-                    <h3 className="sidebarTitle">Calendario</h3>
+                    <h3 className="sidebarTitle">Backoffice</h3>
                     <ul className="sidebarList">
                         <li className="sidebarListItem active">
-                            <Feed className='sidebarIcon'/>
-                            Home
+                            <PointOfSale className='sidebarIcon'/>
+                            Ventas Fan
                         </li>
                         <li className="sidebarListItem">
                             <Search className='sidebarIcon'/>
-                            Ventas
+                            Gestiones
                         </li>
                         <li className="sidebarListItem">
-                            <Person className='sidebarIcon'/>
+                            <Summarize className='sidebarIcon'/>
                             Reportes
                         </li>
                     </ul>
                 </div>
                 <div className="sidebarMenu">
-                    <h3 className="sidebarTitle">Mi Equipo Online</h3>
+                    <h3 className="sidebarTitle">Capacitación</h3>
                     <ul className="sidebarList">
                         <li className="sidebarListItem active">
                             <ManageAccounts className='sidebarIcon'/>
-                            Home
+                            Campañas
                         </li>
                         <li className="sidebarListItem">
                             <MonetizationOn className='sidebarIcon'/>
-                            Ventas
+                            Cargas
+                        </li>
+                        <li className="sidebarListItem">
+                            <AddReaction className='sidebarIcon'/>
+                            Carpetas
                         </li>
                         <li className="sidebarListItem">
                             <QueryStats className='sidebarIcon'/>
-                            Reportes
+                            Carpetas
+                        </li>
+                        <li className="sidebarListItem">
+                            <QueryStats className='sidebarIcon'/>
+                            Carpetas
+                        </li>
+                        <li className="sidebarListItem">
+                            <QueryStats className='sidebarIcon'/>
+                            Carpetas
                         </li>
                     </ul>
                 </div>
                 <div className="sidebarMenu">
-                    <h3 className="sidebarTitle">Gestiones</h3>
+                    <h3 className="sidebarTitle">Planificacion</h3>
                     <ul className="sidebarList">
                         <li className="sidebarListItem active">
-                            <account_circle className='sidebarIcon'/>
-                            Home
+                            <Equalizer className='sidebarIcon'/>
+                            Reporte Global
                         </li>
                         <li className="sidebarListItem">
                             <Print className='sidebarIcon'/>
-                            Ventas
+                            PowerBI
                         </li>
                         <li className="sidebarListItem">
                             <Build className='sidebarIcon'/>
-                            Reportes
+                            NPS
                         </li>
                     </ul>
                 </div>
