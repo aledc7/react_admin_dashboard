@@ -11,7 +11,6 @@ function App() {
       <Box className="container">
         <Sidebar/>
         <Home/>
-        
       </Box>
       
     </Box>
