@@ -75,16 +75,9 @@ function Sidebar() {
                         </li>
                         <li className="sidebarListItem">
                             <QueryStats className='sidebarIcon'/>
-                            Carpetas
+                            Estadisticas
                         </li>
-                        <li className="sidebarListItem">
-                            <QueryStats className='sidebarIcon'/>
-                            Carpetas
-                        </li>
-                        <li className="sidebarListItem">
-                            <QueryStats className='sidebarIcon'/>
-                            Carpetas
-                        </li>
+                        
                     </ul>
                 </div>
                 <div className="sidebarMenu">
