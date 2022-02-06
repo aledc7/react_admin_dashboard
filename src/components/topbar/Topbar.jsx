@@ -1,11 +1,9 @@
 import React from 'react';
 import './topbar.css';
+import { NotificationsNone, Language, Settings } from '@mui/icons-material';
 
-//FIXME encontrar la manera de importar iconos en una sola linea
-import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
-import LanguageIcon from '@mui/icons-material/Language';
-import SettingsIcon from '@mui/icons-material/Settings';
-export default function Topbar(){
+
+function Topbar(){
     return(
         <div className="topbar">
             <div className="topbarWrapper">
@@ -16,15 +14,15 @@ export default function Topbar(){
                 </div>
                 <div className="topRight">
                     <div className="topbarIconContainer">
-                        <NotificationsNoneIcon/>
+                        <NotificationsNone/>
                         <span className="topIconBadge">2</span>
                     </div>
                     <div className="topbarIconContainer">
-                        <LanguageIcon/>
+                        <Language/>
                         <span className="topIconBadge">2</span>
                     </div>
                     <div className="topbarIconContainer">
-                        <SettingsIcon/>
+                        <Settings/>
                     </div>
                     <img src="https://i.pravatar.cc/100" alt='User' className='topAvatar' />
                 </div>
@@ -32,3 +30,6 @@ export default function Topbar(){
         </div>
     )
 }
+
+
+export { Topbar };

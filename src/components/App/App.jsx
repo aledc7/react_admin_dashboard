@@ -1,6 +1,7 @@
-import Topbar from "../Topbar/Topbar.jsx";
-import Sidebar from "../Sidebar/Sidebar.jsx";
+import { Topbar }  from "../Topbar/Topbar.jsx";
+import { Sidebar } from "../Sidebar/Sidebar.jsx";
 import './app.css';
+import { Home} from '../pages/Home/home.jsx'
 
 function App() {
   return (
@@ -8,13 +9,12 @@ function App() {
       <Topbar/>
       <div className="container">
         <Sidebar/>
-        <div className="others">
-
-        </div>
+        <Home/>
+        
       </div>
       
     </div>
   );
 }
 
-export default App;
+export { App };

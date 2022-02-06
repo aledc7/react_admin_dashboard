@@ -18,7 +18,7 @@ import {
 } from '@mui/icons-material';
 
 
-export default function Sidebar() {
+function Sidebar() {
     
 
     return (
@@ -108,3 +108,5 @@ export default function Sidebar() {
         </div>
     )
 }
+
+export { Sidebar };
