@@ -8,19 +8,24 @@ import {
     CloudUpload,
 } from '@mui/icons-material';
 
+import { Link } from "react-router-dom";
+
 function User() {
     return (
         <div className='user'>
             <div className="userTitleContainer">
                 <h1 className="userTitle">Edit USer</h1>
-                <button className="userAddButton">Create</button>
+                <Link to={'/newUser'}>
+                    <button className="userAddButton">Create</button>
+                </Link>
             </div>
+            
             <div className="userContainer">
                 <div className="userShow">
                     <div className="userShowTop">
                         <img src="https://i.pravatar.cc/40" alt="" className="ShowUserImg" />
                         <div className="userShowTopTitle">
-                            <span className="userShowUserName">Anna Becker</span>
+                            <span className="userShowUserName">Alejandro De Castro</span>
                             <span className="userShowUserTitle">Systems Engineer</span>
                         </div>
                     </div>
@@ -28,7 +33,7 @@ function User() {
                         <span className="userShowTitle">Account Details</span>
                         <div className="userShowInfo">
                             <PermIdentity className='userShowIcon'/>
-                            <span className="UserShowInfoTitle">anabeck99</span>
+                            <span className="UserShowInfoTitle">aledc7</span>
                         </div>
                         <div className="userShowInfo">
                             <CalendarToday className='userShowIcon'/>
@@ -41,7 +46,7 @@ function User() {
                         </div>
                         <div className="userShowInfo">
                             <MailOutline className='userShowIcon'/>
-                            <span className="UserShowInfoTitle">aledc@gmail.com</span>
+                            <span className="UserShowInfoTitle">@gmail.com</span>
                         </div>
                         <div className="userShowInfo">
                             <LocationSearching className='userShowIcon'/>
