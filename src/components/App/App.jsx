@@ -4,9 +4,8 @@ import './app.css';
 import { Home } from '../pages/Home/home.jsx'
 import Box from '@mui/material/Box';
 import {
-  BrowserRouter,
   Routes,
-  Route
+  Route,
 } from "react-router-dom";
 import { Userlist } from "../pages/UserList/UserList.jsx";
 import { User } from '../pages/User/User.jsx';
@@ -19,15 +18,12 @@ function App() {
       <Topbar />
       <Box className="container">
         <Sidebar />
-        <BrowserRouter>
           <Routes>
             <Route path='/' element={ <Home/> }   />
             <Route path='/users' element={ <Userlist/> }  />
             <Route path='/user/:userID' element={ <User/> }  />
             <Route path='/user/newUser' element={ <NewUser/> }  />
           </Routes>
-        </BrowserRouter>
-
       </Box>
 
     </div>

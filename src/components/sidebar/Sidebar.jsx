@@ -1,7 +1,8 @@
 import './sidebar.css';
-import { 
-    FingerprintSharp, 
-    People, 
+import '../../components/common.css';
+import {
+    FingerprintSharp,
+    People,
     PointOfSale,
     Search,
     AccessibilityNew,
@@ -13,13 +14,15 @@ import {
     Build,
     Equalizer,
     AddReaction,
-    
+    Storefront,
+
 
 } from '@mui/icons-material';
+import { Link } from "react-router-dom";
 
 
 function Sidebar() {
-    
+
 
     return (
         <div className='sidebar'>
@@ -28,15 +31,15 @@ function Sidebar() {
                     <h3 className="sidebarTitle">RRHH</h3>
                     <ul className="sidebarList">
                         <li className="sidebarListItem active">
-                            <AccessibilityNew className='sidebarIcon'/>
+                            <AccessibilityNew className='sidebarIcon' />
                             Estados Laborales
                         </li>
                         <li className="sidebarListItem">
-                            <FingerprintSharp className='sidebarIcon'/>
+                            <FingerprintSharp className='sidebarIcon' />
                             Inasistencias
                         </li>
                         <li className="sidebarListItem">
-                            <People className='sidebarIcon'/>
+                            <People className='sidebarIcon' />
                             Empleados
                         </li>
                     </ul>
@@ -44,16 +47,22 @@ function Sidebar() {
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Backoffice</h3>
                     <ul className="sidebarList">
-                        <li className="sidebarListItem active">
-                            <PointOfSale className='sidebarIcon'/>
-                            Ventas Fan
-                        </li>
+                        <Link to={'/users'} className="link">
+                            <li className="sidebarListItem active">
+                                <People className='sidebarIcon' />
+                                Users
+                            </li>
+                        </Link>
+
+
+                        <Link to={'/products'} className="link">
+                            <li className="sidebarListItem">
+                                <Storefront className='sidebarIcon' />
+                                Products
+                            </li>
+                        </Link>
                         <li className="sidebarListItem">
-                            <Search className='sidebarIcon'/>
-                            Gestiones
-                        </li>
-                        <li className="sidebarListItem">
-                            <Summarize className='sidebarIcon'/>
+                            <Summarize className='sidebarIcon' />
                             Reportes
                         </li>
                     </ul>
@@ -62,37 +71,37 @@ function Sidebar() {
                     <h3 className="sidebarTitle">Capacitación</h3>
                     <ul className="sidebarList">
                         <li className="sidebarListItem active">
-                            <ManageAccounts className='sidebarIcon'/>
+                            <ManageAccounts className='sidebarIcon' />
                             Campañas
                         </li>
                         <li className="sidebarListItem">
-                            <MonetizationOn className='sidebarIcon'/>
+                            <MonetizationOn className='sidebarIcon' />
                             Cargas
                         </li>
                         <li className="sidebarListItem">
-                            <AddReaction className='sidebarIcon'/>
+                            <AddReaction className='sidebarIcon' />
                             Carpetas
                         </li>
                         <li className="sidebarListItem">
-                            <QueryStats className='sidebarIcon'/>
+                            <QueryStats className='sidebarIcon' />
                             Estadisticas
                         </li>
-                        
+
                     </ul>
                 </div>
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Planificacion</h3>
                     <ul className="sidebarList">
                         <li className="sidebarListItem active">
-                            <Equalizer className='sidebarIcon'/>
+                            <Equalizer className='sidebarIcon' />
                             Reporte Global
                         </li>
                         <li className="sidebarListItem">
-                            <Print className='sidebarIcon'/>
+                            <Print className='sidebarIcon' />
                             PowerBI
                         </li>
                         <li className="sidebarListItem">
-                            <Build className='sidebarIcon'/>
+                            <Build className='sidebarIcon' />
                             NPS
                         </li>
                     </ul>
