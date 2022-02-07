@@ -1,5 +1,12 @@
 import './user.css';
-import { CalendarToday, LocationSearching, MailOutline, PermIdentity, PhoneAndroid } from '@mui/icons-material';
+import { 
+    CalendarToday, 
+    LocationSearching, 
+    MailOutline, 
+    PermIdentity, 
+    PhoneAndroid,
+    CloudUpload,
+} from '@mui/icons-material';
 
 function User() {
     return (
@@ -11,7 +18,7 @@ function User() {
             <div className="userContainer">
                 <div className="userShow">
                     <div className="userShowTop">
-                        <img src="https://i.pravatar.cc/60" alt="" className="ShowUserImg" />
+                        <img src="https://i.pravatar.cc/40" alt="" className="ShowUserImg" />
                         <div className="userShowTopTitle">
                             <span className="userShowUserName">Anna Becker</span>
                             <span className="userShowUserTitle">Systems Engineer</span>
@@ -42,7 +49,41 @@ function User() {
                         </div>
                     </div>
                 </div>
-                <div className="userUpdate"></div>
+                <div className="userUpdate">
+                    <span className="userUpdateTitle">Edit</span>
+                    <form className="userUpdateForm">
+                        <div className="userUpdateLeft">
+                            <div className="userUpdateItem">
+                                <label>Username</label>
+                                <input type="text" className='userUpdateInput' placeholder='annabeck99' />
+                            </div>
+                            <div className="userUpdateItem">
+                                <label>Full Name</label>
+                                <input type="text" className='userUpdateInput' placeholder='Anna Becker' />
+                            </div>
+                            <div className="userUpdateItem">
+                                <label>Email</label>
+                                <input type="text" className='userUpdateInput' placeholder='aledc@gmail.com' />
+                            </div>
+                            <div className="userUpdateItem">
+                                <label>Phone</label>
+                                <input type="text" className='userUpdateInput' placeholder='+54 3415498622' />
+                            </div>
+                            <div className="userUpdateItem">
+                                <label>Address</label>
+                                <input type="text" className='userUpdateInput' placeholder='Colombres 942 | Rosario' />
+                            </div>
+                        </div>
+                        <div className="userUpdateRight">
+                            <div className="userUpdateUpload">
+                                <img src="https://i.pravatar.cc/100"  className='userUpdateImg' alt="" />
+                                <label htmlFor="profilepic"><CloudUpload className='userUploadIcon' /></label>
+                                <input type="file" name="" id="profilepic" className='uploadBtn' />
+                            </div>
+                            <button className="userUpdateButton">Update</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     )
