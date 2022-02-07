@@ -48,7 +48,7 @@ function Sidebar() {
                     <h3 className="sidebarTitle">Backoffice</h3>
                     <ul className="sidebarList">
                         <Link to={'/users'} className="link">
-                            <li className="sidebarListItem active">
+                            <li className="sidebarListItem">
                                 <People className='sidebarIcon' />
                                 Users
                             </li>
@@ -70,7 +70,7 @@ function Sidebar() {
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Capacitación</h3>
                     <ul className="sidebarList">
-                        <li className="sidebarListItem active">
+                        <li className="sidebarListItem">
                             <ManageAccounts className='sidebarIcon' />
                             Campañas
                         </li>
@@ -92,7 +92,7 @@ function Sidebar() {
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Planificacion</h3>
                     <ul className="sidebarList">
-                        <li className="sidebarListItem active">
+                        <li className="sidebarListItem">
                             <Equalizer className='sidebarIcon' />
                             Reporte Global
                         </li>
