@@ -10,6 +10,7 @@ import {
   Route
 } from "react-router-dom";
 import { Userlist } from "../pages/UserList/UserList.jsx";
+import { User } from '../pages/User/User.jsx';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Routes>
             <Route path='/' element={ <Home/> }   />
             <Route path='/users' element={ <Userlist/> }  />
+            <Route path='/user/:userID' element={ <User/> }  />
           </Routes>
         </BrowserRouter>
 
