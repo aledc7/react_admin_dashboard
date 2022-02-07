@@ -5,6 +5,7 @@ import { Home } from '../pages/Home/home.jsx'
 import Box from '@mui/material/Box';
 
 import {
+  BrowserRouter,
   Routes,
   Route
 } from "react-router-dom";
@@ -17,10 +18,12 @@ function App() {
       <Topbar />
       <Box className="container">
         <Sidebar />
-        <Routes>
-          <Route path='/' element={ <Home/> }   />
-          <Route path='/users' element={ <Userlist/> }  />
-        </Routes>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={ <Home/> }   />
+            <Route path='/users' element={ <Userlist/> }  />
+          </Routes>
+        </BrowserRouter>
 
       </Box>
 
