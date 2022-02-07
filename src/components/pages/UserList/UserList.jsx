@@ -1,17 +1,44 @@
-import * as React from 'react';
+import React from 'react';
 import { DataGrid } from '@mui/x-data-grid';
 import { DeleteForever, Edit } from '@mui/icons-material';
 import { userRows } from '../../../dummyData.js';
-
 import './userlist.css';
-import {
-    BrowserRouter,
-    Routes,
-    Route,
-    Link
-} from "react-router-dom";
+import { Link } from "react-router-dom";
+import Swal from 'sweetalert2';
 
 function Userlist() {
+
+
+    const [data, setData] = React.useState(userRows);
+
+
+    const handleDelete = (id) => {
+
+        Swal.fire({
+            title: 'Esta seguro de Borrar el Usuario ?',
+            text: "Esta acción no podrá deshacerse!",
+            icon: 'warning',
+            showCancelButton: true,
+            reverseButtons: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Confirmar',
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // el setTImeout es para que no de errorres la datatable al borrar un id y que despues no encuentre.
+                setTimeout(() => {
+                    setData(data.filter(item => item.id !== id));
+                });
+
+                Swal.fire(
+                    'Eliminado!',
+                    'El Usuario ha sido borrado.',
+                    'success'
+                )
+            }
+        })
+        
+    }
 
     const columns = [
         { field: 'id', headerName: 'ID', width: 90 },
@@ -46,21 +73,14 @@ function Userlist() {
             width: 150,
             renderCell: (params) => {
                 return (
-
                     <>
+                        <Link to={'/user/' + params.row.id}>
+                            <Edit className="userListEdit" />
+                        </Link>
 
-                            <Link to={'/user/' + params.row.id}>
-                                <Edit className="userListEdit" />
-                            </Link>
-                            <Link to={'/user/' + params.row.id}>
-                                <DeleteForever className='userListDelete' />
-                            </Link>
-
+                        <DeleteForever className='userListDelete' onClick={() => handleDelete(params.row.id)} />
                     </>
-
-
                 );
-
             },
         },
     ];
@@ -72,7 +92,7 @@ function Userlist() {
     return (
         <div className='UserList'>
             <DataGrid
-                rows={userRows}
+                rows={data}
                 columns={columns}
                 pageSize={9}
                 rowsPerPageOptions={[9]}

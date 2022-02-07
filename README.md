@@ -32,6 +32,8 @@ npm install react-router-dom --save
 
 npm install @mui/x-data-grid
 
+npm install sweetalert2 sweetalert2-react-content                             
+
 
 ```
 _______________________________________

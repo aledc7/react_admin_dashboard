@@ -22,33 +22,33 @@ function WidgetLarge() {
 
                     <tr className="widgetLgTr">
                         <td className="widgetLgUser">
-                            <img src="https://i.pravatar.cc/100" alt="user" className="widgetLgImg" />
-                            <span className="widgetLgName">Ale</span>
+                            <img src="https://i.pravatar.cc/98" alt="user" className="widgetLgImg" />
+                            <span className="widgetLgName">Ale DC</span>
                         </td>
-                        <td className="widgetLgDate">6 Feb 2022</td>
-                        <td className="widgetLgAmount">u$6.000</td>
+                        <td className="widgetLgDate">4 Feb 2022</td>
+                        <td className="widgetLgAmount">u$24.000</td>
                         <td className="widgetLgStatus">
                             <Button type='Approved' />
                         </td>
                     </tr>
                     <tr className="widgetLgTr">
                         <td className="widgetLgUser">
-                            <img src="https://i.pravatar.cc/100" alt="user" className="widgetLgImg" />
-                            <span className="widgetLgName">Ale</span>
+                            <img src="https://i.pravatar.cc/97" alt="user" className="widgetLgImg" />
+                            <span className="widgetLgName">Lucas Braca</span>
                         </td>
-                        <td className="widgetLgDate">6 Feb 2022</td>
-                        <td className="widgetLgAmount">u$6.000</td>
+                        <td className="widgetLgDate">1 Feb 2022</td>
+                        <td className="widgetLgAmount">u$32.000</td>
                         <td className="widgetLgStatus">
                             <Button type='Declined' />
                         </td>
                     </tr>
                     <tr className="widgetLgTr">
                         <td className="widgetLgUser">
-                            <img src="https://i.pravatar.cc/100" alt="user" className="widgetLgImg" />
-                            <span className="widgetLgName">Ale</span>
+                            <img src="https://i.pravatar.cc/96" alt="user" className="widgetLgImg" />
+                            <span className="widgetLgName">Gonzalo R</span>
                         </td>
-                        <td className="widgetLgDate">6 Feb 2022</td>
-                        <td className="widgetLgAmount">u$6.000</td>
+                        <td className="widgetLgDate">7 Feb 2022</td>
+                        <td className="widgetLgAmount">u$43.000</td>
                         <td className="widgetLgStatus">
                             <Button type='Pending' />
                         </td>
