@@ -50,5 +50,22 @@ const userData = [
 
 ];
 
-export { userData };
+
+
+
+
+const userRows = [
+    { id: 1, userName: 'Ale DC', avatar: 'https://i.pravatar.cc/100', email: 'aledc@gmail.com', status: 'Active', transaction: '$18.500.000' },
+    { id: 2, userName: 'Ale DC', avatar: 'https://i.pravatar.cc/100', email: 'aledc@gmail.com', status: 'Active', transaction: '$18.500.000' },
+    { id: 3, userName: 'Ale DC', avatar: 'https://i.pravatar.cc/100', email: 'aledc@gmail.com', status: 'Active', transaction: '$18.500.000' },
+    { id: 4, userName: 'Ale DC', avatar: 'https://i.pravatar.cc/100', email: 'aledc@gmail.com', status: 'Active', transaction: '$18.500.000' },
+    { id: 5, userName: 'Ale DC', avatar: 'https://i.pravatar.cc/100', email: 'aledc@gmail.com', status: 'Active', transaction: '$18.500.000' },
+    { id: 6, userName: 'Ale DC', avatar: 'https://i.pravatar.cc/100', email: 'aledc@gmail.com', status: 'Active', transaction: '$18.500.000' },
+    { id: 7, userName: 'Ale DC', avatar: 'https://i.pravatar.cc/100', email: 'aledc@gmail.com', status: 'Active', transaction: '$18.500.000' },
+    { id: 8, userName: 'Ale DC', avatar: 'https://i.pravatar.cc/100', email: 'aledc@gmail.com', status: 'Active', transaction: '$18.500.000' },
+    { id: 9, userName: 'Ale DC', avatar: 'https://i.pravatar.cc/100', email: 'aledc@gmail.com', status: 'Active', transaction: '$18.500.000' },
+    { id: 10, userName: 'Ale DC', avatar: 'https://i.pravatar.cc/100', email: 'aledc@gmail.com', status: 'Active', transaction: '$18.500.000' }
+];
+
+export { userData, userRows };
 
