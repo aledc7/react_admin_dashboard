@@ -12,10 +12,9 @@ function Home() {
         <div className='home'>
             <Campaigns />
             <Chart
-                data={userData}
-                title={'Empleados por Mes'}
-                grid dataKey='month'
-                activeuser='active_user'
+                data={ userData }
+                title= "Empleados por Mes"
+                grid dataKey='active_user'
             />
             <div className="homeWidgets">
                 <WidgetSmall/>

@@ -1,51 +1,51 @@
 const userData = [
     {
-        month: 'Enero',
-        "Active User": 21,
+        name: 'Enero',
+        "active_user": 51,
     },
     {
-        month: 'Febrero',
-        "Active User": 22,
+        name: 'Febrero',
+        "active_user": 22,
     },
     {
-        month: 'Marzo',
-        "Active User": 12,
+        name: 'Marzo',
+        "active_user": 12,
     },
     {
-        month: 'Abril',
-        "Active User": 23,
+        name: 'Abril',
+        "active_user": 23,
     },
     {
-        month: 'Mayo',
-        "Active User": 34,
+        name: 'Mayo',
+        "active_user": 34,
     },
     {
-        month: 'Junio',
-        "Active User": 22,
+        name: 'Junio',
+        "active_user": 22,
     },
     {
-        month: 'Julio',
-        "Active User": 34,
+        name: 'Julio',
+        "active_user": 34,
     },
     {
-        month: 'Agosto',
-        "Active User": 31,
+        name: 'Agosto',
+        "active_user": 31,
     },
     {
-        month: 'Septiembre',
-        "Active User": 12,
+        name: 'Septiembre',
+        "active_user": 12,
     },
     {
-        month: 'Octubre',
-        "Active User": 32,
+        name: 'Octubre',
+        "active_user": 32,
     },
     {
-        month: 'Noviembre',
-        "Active User": 43,
+        name: 'Noviembre',
+        "active_user": 43,
     },
     {
-        month: 'Diciembre',
-        "Active User": 66,
+        name: 'Diciembre',
+        "active_user": 66,
     },
 
 ];
@@ -67,5 +67,37 @@ const userRows = [
     { id: 10, userName: 'Gerar Lavanderia', avatar: 'https://i.pravatar.cc/109', email: 'aledc@gmail.com', status: 'Active', transaction: '$18.500.000' }
 ];
 
-export { userData, userRows };
+const productRows = [
+    { id: 1, name: 'Apple Airpods', img: 'https://picsum.photos/200', stock: '12', status: 'Active', price: '$18.500.000' },
+    { id: 2, name: 'Macbook Pro 16"', img: 'https://picsum.photos/199', stock: '12', status: 'Active', price: '$18.500.000' },
+    { id: 3, name: 'iPhone 13', img: 'https://picsum.photos/198', stock: '12', status: 'Active', price: '$18.500.000' },
+    { id: 4, name: 'Fan Small for desktop', img: 'https://picsum.photos/197', stock: '12', status: 'Active', price: '$18.500.000' },
+    { id: 5, name: 'Audio Monitors Yamaha', img: 'https://picsum.photos/196', stock: '12', status: 'Active', price: '$18.500.000' },
+    { id: 6, name: 'Apple Magic Mouse', img: 'https://picsum.photos/195', stock: '12', status: 'Active', price: '$18.500.000' },
+    { id: 7, name: 'Apple Monitor', img: 'https://picsum.photos/194', stock: '12', status: 'Active', price: '$18.500.000' },
+    { id: 8, name: 'Brush for clean the Mac', img: 'https://picsum.photos/193', stock: '12', status: 'Active', price: '$18.500.000' },
+    { id: 9, name: 'Desktop comfortable', img: 'https://picsum.photos/192', stock: '12', status: 'Active', price: '$18.500.000' },
+    { id: 10, name: 'Conditioner Air', img: 'https://picsum.photos/191', stock: '12', status: 'Active', price: '$18.500.000' }
+];
+
+const productData = [
+    {
+        name: 'Enero',
+        "Ventas": 21,
+    },
+    {
+        name: 'Febrero',
+        "Ventas": 32,
+    },
+    {
+        name: 'Marzo',
+        "Ventas": 22,
+    }
+
+];
+
+
+
+
+export { userData, userRows, productRows, productData };
 

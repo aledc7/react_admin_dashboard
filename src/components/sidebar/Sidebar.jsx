@@ -3,8 +3,6 @@ import '../../components/common.css';
 import {
     FingerprintSharp,
     People,
-    PointOfSale,
-    Search,
     AccessibilityNew,
     Summarize,
     ManageAccounts,
