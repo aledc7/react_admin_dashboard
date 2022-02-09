@@ -3,7 +3,6 @@ import '../../components/common.css';
 import {
     FingerprintSharp,
     People,
-    AccessibilityNew,
     Summarize,
     ManageAccounts,
     MonetizationOn,
@@ -13,6 +12,7 @@ import {
     Equalizer,
     AddReaction,
     Storefront,
+    Home,
 
 
 } from '@mui/icons-material';
@@ -28,10 +28,14 @@ function Sidebar() {
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">RRHH</h3>
                     <ul className="sidebarList">
-                        <li className="sidebarListItem active">
-                            <AccessibilityNew className='sidebarIcon' />
-                            Estados Laborales
-                        </li>
+                        <Link to={'/'} className="link">
+                            <li className="sidebarListItem active">
+                                <Home className='sidebarIcon' />
+                                Hom
+                            </li>
+                        </Link>
+
+                        
                         <li className="sidebarListItem">
                             <FingerprintSharp className='sidebarIcon' />
                             Inasistencias

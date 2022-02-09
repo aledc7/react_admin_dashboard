@@ -15,11 +15,11 @@ function Product() {
             </div>
             <div className="productTop">
                 <div className="productTopLeft">
-                <Chart 
-                    data={ productData } 
-                    dataKey="Ventas" 
-                    title="Registro de Ventas"
-                />
+                    <Chart
+                        data={productData}
+                        dataKey="Ventas"
+                        title="Registro de Ventas"
+                    />
                 </div>
                 <div className="productTopRight">
                     <div className="productInfoTop">
@@ -48,7 +48,7 @@ function Product() {
             </div>
             <div className="productBottom">
                 <form className="productForm">
-                    
+
                     <div className="productFormLeft">
                         <label>Product Name</label>
                         <input type="text" placeholder='Apple Airpods' />
@@ -70,13 +70,13 @@ function Product() {
                         <div className="productUpload">
                             <img src="https://picsum.photos/50" alt="" className="productUploadImg" />
                             <label for="file">
-                                <Publish/>
+                                <Publish />
                             </label>
                             <input type="file" name="uploadproduct" id="uploadproduct" className='uploadproduct' />
                         </div>
                         <button className="productButton">Update</button>
                     </div>
-                    
+
                 </form>
             </div>
         </div>
@@ -84,4 +84,6 @@ function Product() {
 }
 
 
-export { Product }
+
+
+export { Product };
