@@ -1,0 +1,480 @@
+html {
+    background-color: #181a1b !important;
+}
+html {
+    color-scheme: dark !important;
+}
+html, body, input, textarea, select, button {
+    background-color: #181a1b;
+}
+html, body, input, textarea, select, button {
+    border-color: #736b5e;
+    color: #e8e6e3;
+}
+a {
+    color: #3391ff;
+}
+table {
+    border-color: #545b5e;
+}
+::placeholder {
+    color: #b2aba1;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: #555b00 !important;
+    color: #e8e6e3 !important;
+}
+::selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+}
+::-moz-selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+}
+
+/* Invert Style */
+.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, #bit-notification-bar-iframe, ::-webkit-calendar-picker-indicator {
+    filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
+}
+
+/* Variables Style */
+:root {
+   --darkreader-neutral-background: #131516;
+   --darkreader-neutral-text: #d8d4cf;
+   --darkreader-selection-background: #004daa;
+   --darkreader-selection-text: #e8e6e3;
+}
+
+/* Modified CSS */
+.topbar {
+    background-color: rgb(24, 26, 27);
+}
+.logo {
+    color: rgb(121, 170, 255);
+}
+.topbarIconContainer {
+    color: rgb(232, 230, 227);
+}
+.topIconBadge {
+    background-color: rgb(204, 0, 0);
+    color: rgb(232, 230, 227);
+}
+.sidebar {
+    background-color: rgb(25, 27, 28);
+}
+.sidebarWrapper {
+    color: rgb(178, 172, 162);
+}
+.sidebarTitle {
+    color: rgb(189, 183, 174);
+}
+.sidebarList {
+    list-style-image: initial;
+}
+.sidebarListItem.active,
+.sidebarListItem:hover {
+    background-color: rgb(33, 36, 37);
+}
+.link {
+    text-decoration-color: initial;
+    color: inherit;
+}
+.others {
+    background-color: rgb(24, 26, 27);
+}
+.campItem {
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 11px -1px;
+}
+.arrows {
+    color: rgb(114, 255, 114);
+}
+.arrows.negative {
+    color: rgb(255, 26, 26);
+}
+.compSubt {
+    color: rgb(152, 143, 129);
+}
+.chart {
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 11px -1px;
+}
+.widgetSmall {
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 11px -1px;
+}
+.widgetSmList {
+    list-style-image: initial;
+}
+.widgetSmButton {
+    border-color: initial;
+    background-color: rgb(31, 34, 35);
+    color: rgb(178, 172, 162);
+}
+.widgetLarge {
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 11px -1px;
+}
+.widgetButton {
+    border-color: initial;
+}
+.widgetButton.Approved {
+    background-color: rgb(11, 58, 45);
+    color: rgb(94, 201, 149);
+}
+.widgetButton.Declined {
+    background-color: rgb(60, 0, 4);
+    color: rgb(219, 91, 142);
+}
+.widgetButton.Pending {
+    background-color: rgb(30, 32, 34);
+    color: rgb(62, 149, 225);
+}
+.userListDelete {
+    border-color: initial;
+    color: rgb(255, 26, 26);
+}
+.userListEdit {
+    border-color: initial;
+    color: rgb(94, 201, 149);
+}
+.swal2-popup.swal2-toast {
+    background-image: initial;
+    background-color: rgb(24, 26, 27);
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 0px 1px,
+    rgba(0, 0, 0, 0.07) 0px 1px 2px,
+    rgba(0, 0, 0, 0.07) 1px 2px 4px,
+    rgba(0, 0, 0, 0.07) 1px 3px 8px,
+    rgba(0, 0, 0, 0.07) 2px 4px 16px;
+}
+.swal2-popup.swal2-toast .swal2-success {
+    border-color: rgb(63, 115, 33);
+}
+.swal2-container.swal2-backdrop-show,
+.swal2-container.swal2-noanimation {
+    background-image: initial;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.swal2-container.swal2-backdrop-hide {
+    background-image: initial !important;
+    background-color: initial !important;
+}
+.swal2-popup {
+    border-color: initial;
+    background-image: initial;
+    background-color: rgb(24, 26, 27);
+    color: rgb(179, 172, 162);
+}
+.swal2-popup:focus {
+    outline-color: initial;
+}
+.swal2-title {
+    color: inherit;
+}
+.swal2-actions:not(.swal2-loading) .swal2-styled:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.1));
+}
+.swal2-actions:not(.swal2-loading) .swal2-styled:active {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2));
+}
+.swal2-loader {
+    border-color: rgb(31, 94, 154) transparent;
+}
+.swal2-styled {
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 3px;
+}
+.swal2-styled.swal2-confirm {
+    border-color: initial;
+    background-image: initial;
+    background-color: rgb(36, 27, 134);
+    color: rgb(232, 230, 227);
+}
+.swal2-styled.swal2-confirm:focus {
+    box-shadow: rgba(36, 27, 134, 0.5) 0px 0px 0px 3px;
+}
+.swal2-styled.swal2-deny {
+    border-color: initial;
+    background-image: initial;
+    background-color: rgb(163, 29, 37);
+    color: rgb(232, 230, 227);
+}
+.swal2-styled.swal2-deny:focus {
+    box-shadow: rgba(163, 29, 37, 0.5) 0px 0px 0px 3px;
+}
+.swal2-styled.swal2-cancel {
+    border-color: initial;
+    background-image: initial;
+    background-color: rgb(90, 97, 101);
+    color: rgb(232, 230, 227);
+}
+.swal2-styled.swal2-cancel:focus {
+    box-shadow: rgba(90, 97, 101, 0.5) 0px 0px 0px 3px;
+}
+.swal2-styled.swal2-default-outline:focus {
+    box-shadow: rgba(46, 89, 131, 0.5) 0px 0px 0px 3px;
+}
+.swal2-styled:focus {
+    outline-color: initial;
+}
+.swal2-footer {
+    border-top-color: rgb(53, 57, 59);
+    color: inherit;
+}
+.swal2-timer-progress-bar {
+    background-image: initial;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.swal2-close {
+    border-color: initial;
+    background-image: initial;
+    background-color: initial;
+    color: rgb(200, 195, 188);
+}
+.swal2-close:hover {
+    background-image: initial;
+    background-color: initial;
+    color: rgb(242, 111, 111);
+}
+.swal2-close:focus {
+    outline-color: initial;
+    box-shadow: rgba(46, 89, 131, 0.5) 0px 0px 0px 3px inset;
+}
+.swal2-html-container {
+    color: inherit;
+}
+.swal2-file,
+.swal2-input,
+.swal2-textarea {
+    border-color: rgb(59, 64, 66);
+    background-image: inherit;
+    background-color: inherit;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 1px inset,
+    rgba(0, 0, 0, 0) 0px 0px 0px 3px;
+    color: inherit;
+}
+.swal2-file.swal2-inputerror,
+.swal2-input.swal2-inputerror,
+.swal2-textarea.swal2-inputerror {
+    border-color: rgb(135, 13, 13) !important;
+    box-shadow: rgb(130, 12, 12) 0px 0px 2px !important;
+}
+.swal2-file:focus,
+.swal2-input:focus,
+.swal2-textarea:focus {
+    border-color: rgb(25, 80, 105);
+    outline-color: initial;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 1px inset,
+    rgba(46, 89, 131, 0.5) 0px 0px 0px 3px;
+}
+.swal2-file::placeholder,
+.swal2-input::placeholder,
+.swal2-textarea::placeholder {
+    color: rgb(200, 195, 188);
+}
+.swal2-range {
+    background-image: initial;
+    background-color: rgb(24, 26, 27);
+}
+.swal2-range output {
+    color: inherit;
+}
+.swal2-file {
+    background-image: inherit;
+    background-color: inherit;
+}
+.swal2-select {
+    background-image: inherit;
+    background-color: inherit;
+    color: inherit;
+}
+.swal2-checkbox,
+.swal2-radio {
+    background-image: initial;
+    background-color: rgb(24, 26, 27);
+    color: inherit;
+}
+.swal2-validation-message {
+    background-image: initial;
+    background-color: rgb(32, 35, 37);
+    color: rgb(168, 160, 149);
+}
+.swal2-validation-message::before {
+    background-color: rgb(130, 12, 12);
+    color: rgb(232, 230, 227);
+}
+.swal2-icon {
+    border-color: rgb(140, 130, 115);
+}
+.swal2-icon.swal2-error {
+    border-color: rgb(135, 13, 13);
+    color: rgb(242, 111, 111); 
+}
+.swal2-icon.swal2-error [class^="swal2-x-mark-line"] {
+    background-color: rgb(130, 12, 12);
+}
+.swal2-icon.swal2-warning {
+    border-color: rgb(123, 61, 7);
+    color: rgb(247, 180, 122);
+}
+.swal2-icon.swal2-info {
+    border-color: rgb(11, 95, 123);
+    color: rgb(74, 198, 239);
+}
+.swal2-icon.swal2-question {
+    border-color: rgb(45, 71, 82);
+    color: rgb(138, 175, 191);
+}
+.swal2-icon.swal2-success {
+    border-color: rgb(63, 115, 33);
+    color: rgb(163, 219, 131);
+}
+.swal2-icon.swal2-success .swal2-success-ring {
+    border-color: rgba(63, 115, 33, 0.3); 
+}
+.swal2-icon.swal2-success [class^="swal2-success-line"] {
+    background-color: rgb(74, 112, 32);
+}
+.swal2-progress-steps {
+    background-image: inherit;
+    background-color: inherit;
+}
+.swal2-progress-steps .swal2-progress-step {
+    background-image: initial;
+    background-color: rgb(31, 96, 157);
+    color: rgb(232, 230, 227);
+}
+.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step {
+    background-image: initial;
+    background-color: rgb(31, 96, 157);
+}
+.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step ~ .swal2-progress-step {
+    background-image: initial;
+    background-color: rgb(27, 73, 88);
+    color: rgb(232, 230, 227);
+}
+.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step ~ .swal2-progress-step-line {
+    background-image: initial;
+    background-color: rgb(27, 73, 88);
+}
+.swal2-progress-steps .swal2-progress-step-line {
+    background-image: initial;
+    background-color: rgb(31, 96, 157); 
+}
+[class^="swal2"] {
+    -webkit-tap-highlight-color: transparent;
+}
+body.swal2-no-backdrop .swal2-container {
+    background-color: transparent !important;
+}
+body.swal2-no-backdrop .swal2-container .swal2-modal {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;
+}
+body.swal2-toast-shown .swal2-container {
+    background-color: transparent;
+}
+.userAddButton {
+    border-color: initial;
+    background-color: rgb(0, 102, 102);
+    color: rgb(232, 230, 227);
+}
+.userShow {
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 11px -1px;
+}
+.userUpdate {
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 11px -1px;
+}
+.userShowTitle {
+    color: rgb(180, 173, 164);
+}
+.userShowInfo {
+    color: rgb(189, 183, 175);
+}
+.userUpdateInput {
+    border-top-color: initial;
+    border-right-color: initial;
+    border-left-color: initial;
+    border-bottom-color: rgb(84, 91, 94);
+}
+.userUpdateButton {
+    border-color: initial;
+    background-color: rgb(0, 0, 111);
+    color: rgb(232, 230, 227);
+}
+.newUserItem > label {
+    color: rgb(166, 158, 147);
+}
+.newUserItem > input {
+    border-color: rgb(84, 91, 94);
+}
+.newUserGender > label {
+    color: rgb(178, 172, 162);
+}
+.newUserButton {
+    background-color: rgb(0, 0, 111);
+    color: rgb(232, 230, 227);
+}
+.productListDelete {
+    border-color: initial;
+    color: rgb(255, 26, 26);
+}
+.productListEdit {
+    border-color: initial;
+    color: rgb(94, 201, 149);
+}
+.productAddButton {
+    border-color: initial;
+    background-color: rgb(0, 102, 102);
+    color: rgb(232, 230, 227);
+}
+.productTopRight {
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 11px -1px;
+}
+.productBottom {
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 11px -1px;
+}
+.productFormLeft > label {
+    color: rgb(152, 143, 129);
+}
+.productFormLeft > input {
+    border-top-color: initial;
+    border-right-color: initial;
+    border-left-color: initial;
+    border-bottom-color: rgb(84, 91, 94);
+}
+.productButton {
+    border-color: initial;
+    background-color: rgb(0, 0, 111);
+    color: rgb(232, 230, 227);
+}
+.addProductItem > label {
+    color: rgb(152, 143, 129);
+}
+.addProductButton {
+    border-color: initial;
+    background-color: rgb(0, 0, 111);
+    color: rgb(232, 230, 227);
+}
+.css-i4bv87-MuiSvgIcon-root {
+    fill: currentcolor;
+}
+
+/* Override Style */
+.vimvixen-hint {
+    background-color: #7b5300 !important;
+    border-color: #d8b013 !important;
+    color: #f3e8c8 !important;
+}
+::placeholder {
+    opacity: 0.5 !important;
+}
+a[href="https://coinmarketcap.com/"] > svg[width="94"][height="16"] > path {
+    fill: var(--darkreader-neutral-text) !important;
+}
+#edge-translate-panel-body,
+.MuiTypography-body1 {
+    color: var(--darkreader-neutral-text) !important;
+}
+gr-main-header {
+    background-color: #0f3a48 !important;
+}
