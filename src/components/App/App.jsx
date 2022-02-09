@@ -13,6 +13,7 @@ import { NewUser } from '../pages/newUser/NewUser.jsx';
 import { Productlist } from '../pages/ProductList/ProductList.jsx';
 import { Product } from '../pages/Product/Product.jsx';
 import { NewProduct } from '../pages/NewProduct/NewProduct.jsx';
+// import { Modal } from "../Modal/Modal.jsx";
 
 
 function App() {
@@ -20,6 +21,12 @@ function App() {
     <div className="App">
       <Topbar />
       <Box className="container">
+        
+        
+        {/* <Modal>
+          <h1>hola</h1>
+        </Modal> */}
+
         <Sidebar />
           <Routes>
             <Route path='/' element={ <Home/> }   />
