@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../../images/logo.svg';
 import './topbar.css';
 import { NotificationsNone, Language, Settings } from '@mui/icons-material';
 
@@ -8,9 +9,7 @@ function Topbar(){
         <div className="topbar">
             <div className="topbarWrapper">
                 <div className="topLeft">
-                    <span className="logo">
-                        Logo
-                    </span>
+                    <img src={logo} className="App-logo" alt="logo" />
                 </div>
                 <div className="topRight">
                     <div className="topbarIconContainer">

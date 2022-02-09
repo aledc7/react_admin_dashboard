@@ -69,7 +69,7 @@ function Product() {
                     <div className="productFormRight">
                         <div className="productUpload">
                             <img src="https://picsum.photos/50" alt="" className="productUploadImg" />
-                            <label for="file">
+                            <label htmlFor="file">
                                 <Publish />
                             </label>
                             <input type="file" name="uploadproduct" id="uploadproduct" className='uploadproduct' />
