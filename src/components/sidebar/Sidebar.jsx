@@ -33,26 +33,12 @@ function Sidebar({ openInNewTab }) {
                     <h3 className="sidebarTitle">RRHH</h3>
                     <ul className="sidebarList">
                         <Link to={'/'} className="link">
-                            <li className="sidebarListItem active">
+                            <li className="sidebarListItem">
                                 <Home className='sidebarIcon' />
-                                Hom
+                                Home
                             </li>
                         </Link>
 
-
-                        <li className="sidebarListItem">
-                            <FingerprintSharp className='sidebarIcon' />
-                            Inasistencias
-                        </li>
-                        <li className="sidebarListItem">
-                            <People className='sidebarIcon' />
-                            Empleados
-                        </li>
-                    </ul>
-                </div>
-                <div className="sidebarMenu">
-                    <h3 className="sidebarTitle">Backoffice</h3>
-                    <ul className="sidebarList">
                         <Link to={'/users'} className="link">
                             <li className="sidebarListItem">
                                 <People className='sidebarIcon' />
@@ -67,6 +53,22 @@ function Sidebar({ openInNewTab }) {
                                 Products
                             </li>
                         </Link>
+                    </ul>
+                </div>
+                <div className="sidebarMenu">
+                    <h3 className="sidebarTitle">Backoffice</h3>
+                    <ul className="sidebarList">
+                    
+                        <li className="sidebarListItem">
+                            <FingerprintSharp className='sidebarIcon' />
+                            Inasistencias
+                        </li>
+
+                        <li className="sidebarListItem">
+                            <People className='sidebarIcon' />
+                            Empleados
+                        </li>
+                        
                         <li className="sidebarListItem">
                             <Summarize className='sidebarIcon' />
                             Reportes

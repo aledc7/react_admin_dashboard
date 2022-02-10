@@ -8,7 +8,7 @@ function Topbar(){
     return(
         <div className="topbar">
             <div className="topbarWrapper">
-                <div className="topLeft">
+                <div className="logoWrapper">
                     <img src={logo} className="App-logo" alt="logo" />
                 </div>
                 <div className="topRight">
