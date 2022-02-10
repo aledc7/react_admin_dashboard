@@ -1,6 +1,6 @@
 .sidebar{
     flex: 1;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 60px);
     background-color: rgb(251,251,255);
     position:sticky;
     top: 50px;
@@ -40,4 +40,36 @@
 .sidebarIcon{
     margin-right: 5px;
     font-size: 20px !important;
+}
+
+.footerCopy{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.text-dc {
+    text-align: center;
+    font-weight:500;
+    cursor: pointer;
+}
+.text-dc:hover {
+    color: #4857f7;
+    font-weight: 900;
+}
+    
+@media (prefers-reduced-motion: no-preference) {
+    .logofooter {
+    font-size: 12px;
+    color:#2c6cda;
+    margin-right: 5px;
+    animation: App-logo-spin infinite 20s linear;
+    }
+}
+@media (prefers-reduced-motion: no-preference) {
+    .github {
+    font-size: 15px;
+    color: black;
+    margin-right: 5px;
+    /* animation: App-logo-spin infinite 20s linear; */
+    }
 }

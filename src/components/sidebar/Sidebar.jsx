@@ -1,5 +1,6 @@
 import './sidebar.css';
 import '../../components/common.css';
+import Box from '@mui/material/Box';
 import {
     FingerprintSharp,
     People,
@@ -13,13 +14,16 @@ import {
     AddReaction,
     Storefront,
     Home,
+    GitHub,
+    SentimentSatisfiedAlt,
 
 
 } from '@mui/icons-material';
+
 import { Link } from "react-router-dom";
 
 
-function Sidebar() {
+function Sidebar({ openInNewTab }) {
 
 
     return (
@@ -35,7 +39,7 @@ function Sidebar() {
                             </li>
                         </Link>
 
-                        
+
                         <li className="sidebarListItem">
                             <FingerprintSharp className='sidebarIcon' />
                             Inasistencias
@@ -109,6 +113,18 @@ function Sidebar() {
                     </ul>
                 </div>
             </div>
+
+            <Box className="footerCopy">
+                <p className='text-dc' title="Click me..." onClick={() => openInNewTab('https://stackoverflow.com/users/10220740/ale-dc')}>
+                    <SentimentSatisfiedAlt className='logofooter' />
+                    Ale DC Profile ➳
+                </p>
+
+                <p className='text-dc' title="Click me..." onClick={() => openInNewTab('https://github.com/aledc7/react_admin_dashboard')}>
+                    <GitHub className='github' />
+                    Clone on Github
+                </p>
+            </Box>
         </div>
     )
 }

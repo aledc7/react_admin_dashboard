@@ -68,16 +68,16 @@ const userRows = [
 ];
 
 const productRows = [
-    { id: 1, name: 'Apple Airpods', img: 'https://picsum.photos/200', stock: '12', status: 'Active', price: '$18.500.000' },
-    { id: 2, name: 'Macbook Pro 16"', img: 'https://picsum.photos/199', stock: '12', status: 'Active', price: '$18.500.000' },
-    { id: 3, name: 'iPhone 13', img: 'https://picsum.photos/198', stock: '12', status: 'Active', price: '$18.500.000' },
-    { id: 4, name: 'Fan Small for desktop', img: 'https://picsum.photos/197', stock: '12', status: 'Active', price: '$18.500.000' },
-    { id: 5, name: 'Audio Monitors Yamaha', img: 'https://picsum.photos/196', stock: '12', status: 'Active', price: '$18.500.000' },
-    { id: 6, name: 'Apple Magic Mouse', img: 'https://picsum.photos/195', stock: '12', status: 'Active', price: '$18.500.000' },
-    { id: 7, name: 'Apple Monitor', img: 'https://picsum.photos/194', stock: '12', status: 'Active', price: '$18.500.000' },
-    { id: 8, name: 'Brush for clean the Mac', img: 'https://picsum.photos/193', stock: '12', status: 'Active', price: '$18.500.000' },
-    { id: 9, name: 'Desktop comfortable', img: 'https://picsum.photos/192', stock: '12', status: 'Active', price: '$18.500.000' },
-    { id: 10, name: 'Conditioner Air', img: 'https://picsum.photos/191', stock: '12', status: 'Active', price: '$18.500.000' }
+    { id: 1, name: 'Apple Airpods', img: 'https://picsum.photos/200', stock: '25', status: 'Active', price: 'u$ 30' },
+    { id: 2, name: 'Macbook Pro 16"', img: 'https://picsum.photos/199', stock: '10', status: 'Active', price: 'u$2400' },
+    { id: 3, name: 'iPhone 13', img: 'https://picsum.photos/198', stock: '30', status: 'Active', price: 'u$1200' },
+    { id: 4, name: 'Fan Small for desktop', img: 'https://picsum.photos/197', stock: '7', status: 'Active', price: 'u$10' },
+    { id: 5, name: 'Audio Monitors Yamaha', img: 'https://picsum.photos/196', stock: '5', status: 'Active', price: 'u$500' },
+    { id: 6, name: 'Apple Magic Mouse', img: 'https://picsum.photos/195', stock: '6', status: 'Active', price: 'us$250' },
+    { id: 7, name: 'Apple Monitor', img: 'https://picsum.photos/194', stock: '5', status: 'Active', price: 'u$1500' },
+    { id: 8, name: 'Brush for clean the Mac', img: 'https://picsum.photos/193', stock: '50', status: 'Active', price: 'u$7' },
+    { id: 9, name: 'Desktop comfortable', img: 'https://picsum.photos/192', stock: '0', status: 'Inactive', price: '$u$1200' },
+    { id: 10, name: 'Conditioner Air', img: 'https://picsum.photos/191', stock: '2', status: 'Active', price: 'u$700' }
 ];
 
 const productData = [

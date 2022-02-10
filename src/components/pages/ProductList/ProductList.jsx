@@ -4,11 +4,44 @@ import { DeleteForever, Edit } from '@mui/icons-material';
 import { productRows } from '../../../dummyData.js';
 import { Link } from "react-router-dom";
 import Swal from 'sweetalert2';
-
 import './productList.css';
+import { useContext } from "../../../customHooks/useContext.jsx";
+
 
 function Productlist() {
-    const[data,setData] = React.useState(productRows);
+    
+
+
+    const {
+        
+        todos, //este tiene los datos del local storage
+        
+        
+        dataStatus, 
+        todosFiltered, 
+        toggleCompleteTodo,
+        deleteTodo,
+        editTodo,
+        openModal,
+        setOpenModal,
+        setIsUpdate,
+        totalTodos,
+        completedTodos,
+        searchValue,
+        setSearchValue,
+        addTodo,
+        newTodoValue,
+        setNewTodoValue,
+        isUpdate,
+        idEditado,
+        setIdEditado,
+        openInNewTab,
+    } = useContext();
+
+    // const[data,setData] = React.useState(productRows);
+    const[data,setData] = React.useState(todos);
+
+
 
     const handleDelete = (id) => {
 
@@ -41,7 +74,7 @@ function Productlist() {
     const columns = [
         { field: 'id', headerName: 'ID', width: 90 },
         {
-            field: 'product', headerName: 'Product', width: 200,
+            field: 'name', headerName: 'Product', width: 200,
             renderCell: (params) => {
                 return (
                     <div className='productListItem'>
@@ -86,7 +119,8 @@ function Productlist() {
     return (
         <div className='productList'>
             <DataGrid
-                rows={data}
+                // rows={data}
+                rows={todos}
                 columns={columns}
                 pageSize={9}
                 rowsPerPageOptions={[9]}
