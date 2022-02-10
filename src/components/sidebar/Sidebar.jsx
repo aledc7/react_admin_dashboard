@@ -42,6 +42,12 @@ function Sidebar({ openInNewTab }) {
                             </NavLink>
                         </li>
                         
+                        <li>
+                            <NavLink className={({ isActive }) => isActive ? 'link sidebarListItem active' : 'link sidebarListItem'} to='/users'>
+                                <People className='sidebarIcon' />
+                                Users
+                            </NavLink>
+                        </li>
 
                         <li>
                             <NavLink className={({ isActive }) => isActive ? 'link sidebarListItem active' : 'link sidebarListItem'} to='/products'>
@@ -50,12 +56,6 @@ function Sidebar({ openInNewTab }) {
                             </NavLink>
                         </li>
 
-                        <li>
-                            <NavLink className={({ isActive }) => isActive ? 'link sidebarListItem active' : 'link sidebarListItem'} to='/users'>
-                                <People className='sidebarIcon' />
-                                Users
-                            </NavLink>
-                        </li>
                     </ul>
                 </div>
                 <div className="sidebarMenu">
@@ -129,6 +129,8 @@ function Sidebar({ openInNewTab }) {
                     <GitHub className='github' />
                     Clone on Github
                 </p>
+
+                <p>v1.2</p>
             </Box>
         </div>
     )

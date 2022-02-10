@@ -30,14 +30,16 @@ function Userlist() {
                     setData(data.filter(item => item.id !== id));
                 });
 
-                Swal.fire(
-                    'Eliminado!',
-                    'El Usuario ha sido borrado.',
-                    'success'
-                )
+                Swal.fire({
+                    position: 'center',
+                    icon: 'success',
+                    title: 'Usuario eliminado',
+                    showConfirmButton: false,
+                    timer: 2000
+                })
             }
         })
-        
+
     }
 
     const columns = [
