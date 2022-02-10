@@ -21,6 +21,7 @@ import {
 } from '@mui/icons-material';
 
 import { NavLink } from "react-router-dom";
+import { SiRedux } from "react-icons/si";
 
 
 function Sidebar({ openInNewTab }) {
@@ -121,7 +122,7 @@ function Sidebar({ openInNewTab }) {
 
             <Box className="footerCopy">
                 <p className='text-dc' title="Click me..." onClick={() => openInNewTab('https://stackoverflow.com/users/10220740/ale-dc')}>
-                    <SentimentSatisfiedAlt className='logofooter' />
+                    <SiRedux className='logofooter' />
                     Ale DC Profile ➳
                 </p>
 

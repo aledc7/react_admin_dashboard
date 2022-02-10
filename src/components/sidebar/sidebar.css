@@ -60,7 +60,7 @@
     
 @media (prefers-reduced-motion: no-preference) {
     .logofooter {
-    font-size: 12px;
+    font-size: 20px;
     color:#2c6cda;
     margin-right: 5px;
     animation: App-logo-spin infinite 20s linear;

@@ -1,5 +1,32 @@
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.addCircle{
+    color: rgb(76,152,79);
+    margin-right: 50px;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.addCircle:hover{
+    color: rgb(51	105	60);
+    box-shadow: 5px 5px 5px 5px solid black;
+}
+
+
+
+
+
 .productList{
     flex: 4;
+    padding: 50px;
+    width: 300px;
 }
 
 .productListItem {
@@ -30,4 +57,23 @@
     border-radius: 50%;
     object-fit: cover;
     margin-right: 10px;
+}
+
+.productTitleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.productAddButton {
+    width: 80px;
+    border: none;
+    padding: 5px;
+    background-color: teal;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
 }

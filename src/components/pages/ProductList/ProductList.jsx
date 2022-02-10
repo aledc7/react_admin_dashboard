@@ -1,45 +1,25 @@
 import React from 'react';
 import { DataGrid } from '@mui/x-data-grid';
-import { DeleteForever, Edit } from '@mui/icons-material';
-import { productRows } from '../../../dummyData.js';
+import { DeleteForever, Edit, AddCircle } from '@mui/icons-material';
 import { Link } from "react-router-dom";
 import Swal from 'sweetalert2';
 import './productList.css';
 import { useContext } from "../../../customHooks/useContext.jsx";
+import { SiAddthis } from "react-icons/si";
+
+
+
 
 
 function Productlist() {
-    
-
 
     const {
-        
+
         todos, //este tiene los datos del local storage
-        
-        
-        dataStatus, 
-        todosFiltered, 
-        toggleCompleteTodo,
-        deleteTodo,
-        editTodo,
-        openModal,
-        setOpenModal,
-        setIsUpdate,
-        totalTodos,
-        completedTodos,
-        searchValue,
-        setSearchValue,
-        addTodo,
-        newTodoValue,
-        setNewTodoValue,
-        isUpdate,
-        idEditado,
-        setIdEditado,
-        openInNewTab,
     } = useContext();
 
     // const[data,setData] = React.useState(productRows);
-    const[data,setData] = React.useState(todos);
+    const [data, setData] = React.useState(todos);
 
 
 
@@ -68,7 +48,7 @@ function Productlist() {
                 )
             }
         })
-        
+
     }
 
     const columns = [
@@ -115,11 +95,17 @@ function Productlist() {
         },
     ];
 
-    
+
     return (
+
         <div className='productList'>
+            <div className="productTitleContainer">
+                <h2>Lista de Productos</h2>
+                <Link to='/newProduct'>
+                    <SiAddthis className='addCircle' />
+                </Link>
+            </div>
             <DataGrid
-                // rows={data}
                 rows={todos}
                 columns={columns}
                 pageSize={9}
