@@ -20,7 +20,7 @@ import {
 
 } from '@mui/icons-material';
 
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 function Sidebar({ openInNewTab }) {
@@ -32,33 +32,36 @@ function Sidebar({ openInNewTab }) {
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">RRHH</h3>
                     <ul className="sidebarList">
-                        <Link to={'/'} className="link">
-                            <li className="sidebarListItem">
+
+
+                        
+                        <li>
+                            <NavLink className={({ isActive }) => isActive ? 'link sidebarListItem active' : 'link sidebarListItem'} to='/'>
                                 <Home className='sidebarIcon' />
                                 Home
-                            </li>
-                        </Link>
+                            </NavLink>
+                        </li>
+                        
 
-                        <Link to={'/users'} className="link">
-                            <li className="sidebarListItem">
-                                <People className='sidebarIcon' />
-                                Users
-                            </li>
-                        </Link>
-
-
-                        <Link to={'/products'} className="link">
-                            <li className="sidebarListItem">
+                        <li>
+                            <NavLink className={({ isActive }) => isActive ? 'link sidebarListItem active' : 'link sidebarListItem'} to='/products'>
                                 <Storefront className='sidebarIcon' />
                                 Products
-                            </li>
-                        </Link>
+                            </NavLink>
+                        </li>
+
+                        <li>
+                            <NavLink className={({ isActive }) => isActive ? 'link sidebarListItem active' : 'link sidebarListItem'} to='/users'>
+                                <People className='sidebarIcon' />
+                                Users
+                            </NavLink>
+                        </li>
                     </ul>
                 </div>
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Backoffice</h3>
                     <ul className="sidebarList">
-                    
+
                         <li className="sidebarListItem">
                             <FingerprintSharp className='sidebarIcon' />
                             Inasistencias
@@ -68,7 +71,7 @@ function Sidebar({ openInNewTab }) {
                             <People className='sidebarIcon' />
                             Empleados
                         </li>
-                        
+
                         <li className="sidebarListItem">
                             <Summarize className='sidebarIcon' />
                             Reportes
