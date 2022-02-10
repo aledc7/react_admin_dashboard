@@ -14,27 +14,27 @@
 
 # React Admin Dashboard
 
+:point_right:   [Live demo](https://aledc7.github.io/)
+
 _______________________________________
 1. - Create a new React App:  
 ```js
 npx create-react-app react-admin
 ```
-2. - Install this dependences :point_down:
+2. - Dependences :point_down:
 
 ```js
-npm install @mui/material @emotion/react @emotion/styled
+@mui/material @emotion/react @emotion/styled
 
-npm install @mui/icons-material
+@mui/icons-material
 
-npm install recharts
+recharts
 
-npm install react-router-dom --save
+react-router-dom --save
 
-npm install @mui/x-data-grid
+@mui/x-data-grid
 
-npm install sweetalert2 sweetalert2-react-content                             
-
-
+sweetalert2 sweetalert2-react-content                             
 ```
 _______________________________________
 
