@@ -7,11 +7,18 @@
 .colores {
     color: rgb(241,181,63);
     
+
     color: rgb(136,178,83);
+
+    /* MUI */
+    color: rgb(76,152,79); 
 
     color: rgb(156,160,164);
 
     color: rgb(41,41,41);
 
     color: rgb(212,72,61);
+   
+   /* MUI */
+    color: rgb(195,63,56);
 }

@@ -67,7 +67,8 @@
     position:absolute;
     top: -5px;
     right: 0px;
-    background-color: red;
+    background-color: rgb(53,119,203);
+
     color: white;
     border-radius: 50%;
     display: flex;

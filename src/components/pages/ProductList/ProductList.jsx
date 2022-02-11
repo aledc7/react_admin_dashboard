@@ -5,7 +5,14 @@ import { Link } from "react-router-dom";
 import Swal from 'sweetalert2';
 import './productList.css';
 import { useContext } from "../../../customHooks/useContext.jsx";
-import { SiAddthis } from "react-icons/si";
+import {
+    MdSearch,
+    MdAddCircle,
+    MdCloudDownload,
+} from "react-icons/md";
+
+
+
 
 
 
@@ -87,6 +94,7 @@ function Productlist() {
                         <Link to={'/product/' + params.row.id}>
                             <Edit className="productListEdit" />
                         </Link>
+                        <MdSearch className='addCircle' />
 
                         <DeleteForever className='productListDelete' onClick={() => handleDelete(params.row.id)} />
                     </>
@@ -101,9 +109,18 @@ function Productlist() {
         <div className='productList'>
             <div className="productTitleContainer">
                 <h2>Lista de Productos</h2>
-                <Link to='/newProduct'>
-                    <SiAddthis className='addCircle' />
-                </Link>
+                <div className='actionBtn'>
+                    <Link to='/newProduct'>
+                        <MdCloudDownload className='addCircle' />
+                    </Link>
+                    <Link to='/newProduct'>
+                        <MdSearch className='addCircle' />
+                    </Link>
+                    <Link to='/newProduct'>
+                        <MdAddCircle className='addCircle' />
+                    </Link>
+                </div>
+                
             </div>
             <DataGrid
                 rows={todos}

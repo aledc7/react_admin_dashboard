@@ -20,7 +20,7 @@ function App() {
 
 
   return (
-    <div className="App">
+    <>
       <Topbar />
       <Box className="container">
 
@@ -49,7 +49,7 @@ function App() {
 
       
 
-    </div>
+    </>
   );
 }
 
