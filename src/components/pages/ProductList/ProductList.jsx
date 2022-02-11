@@ -11,6 +11,8 @@ import {
     MdCloudDownload,
 } from "react-icons/md";
 
+import { Tableresponsive } from '../../TableResponsive/TableResponsive.jsx';
+
 
 
 
@@ -122,14 +124,22 @@ function Productlist() {
                 </div>
                 
             </div>
-            <DataGrid
-                rows={todos}
-                columns={columns}
-                pageSize={9}
-                rowsPerPageOptions={[9]}
-                checkboxSelection
-                disableSelectionOnClick
-            />
+            <div style={{ height: 400, width: 1000 }}>
+                <DataGrid
+                    rows={todos}
+                    columns={columns}
+                    pageSize={9}
+                    rowsPerPageOptions={[9]}
+                    checkboxSelection
+                    disableSelectionOnClick
+                />
+            </div>
+
+            <div style={{ height: 400, width: 1000 }}>
+                <Tableresponsive/>
+            </div>
+
+
         </div>
     )
 }
