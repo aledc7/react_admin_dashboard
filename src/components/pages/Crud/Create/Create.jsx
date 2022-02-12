@@ -1,11 +1,13 @@
-import React from 'react'
-import { Button, Checkbox, Form } from 'semantic-ui-react'
+import React from 'react';
+import { Button, Checkbox, Form } from 'semantic-ui-react';
+import './create.css';
+
 
 
 
 function Create() {
     return (
-        <Form>
+        <Form className="create-form">
             <Form.Field>
                 <label>First Name</label>
                 <input placeholder='First Name' />
@@ -19,6 +21,8 @@ function Create() {
             </Form.Field>
             <Button type='submit'>Submit</Button>
         </Form>
+
+
     )
 }
 

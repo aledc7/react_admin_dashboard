@@ -1,7 +1,7 @@
 import React from 'react';
 // import 'semantic-ui-css/semantic.min.css';
 import './crud.css';
-import { Create } from './Create.jsx';
+import { Create } from './Create/Create.jsx';
 
 
 
