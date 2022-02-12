@@ -1,10 +1,47 @@
-import { Link } from 'react-router-dom';
 import { Chart } from '../../Charts/Chart.jsx';
 import './product.css';
 import { productData } from '../../../dummyData.js';
 import { Publish } from '@mui/icons-material';
+import { useContext } from '../../../customHooks/useContext.jsx'
 
 function Product() {
+
+    const {
+        dataStatus,
+        todosFiltered,
+        toggleCompleteTodo,
+        deleteTodo,
+        editTodo,
+        openModal,
+        setOpenModal,
+        setIsUpdate,
+        totalTodos,
+        completedTodos,
+        searchValue,
+        setSearchValue,
+        addTodo,
+        newTodoValue,
+        setNewTodoValue,
+        productName,
+        setProductName,
+        isUpdate,
+        idEditado,
+        setIdEditado,
+    } = useContext();
+
+
+    const onSubmit = (event) => {
+        event.preventDefault();
+
+        editTodo(productName);
+
+
+        addTodo(newTodoValue, isUpdate, idEditado);
+
+        // cierro el modal
+        setOpenModal(false);
+    }
+
     return (
         <div className='product'>
             <div className="productTitleContainer">
@@ -48,7 +85,9 @@ function Product() {
 
                     <div className="productFormLeft">
                         <label>Product Name</label>
-                        <input type="text" placeholder='Apple Airpods' />
+                        <input type="text"  name='name' id='name'/>
+                        <label>Price</label>
+                        <input type="text" placeholder='u$30' name='price' id='price' />
 
                         <label>in Stock</label>
                         <select name="inStock" id="instock">
@@ -57,7 +96,7 @@ function Product() {
                         </select>
 
                         <label>Active</label>
-                        <select name="inStock" id="instock">
+                        <select name="active" id="active">
                             <option value="yes">Si</option>
                             <option value="no">No</option>
                         </select>
@@ -71,10 +110,25 @@ function Product() {
                             </label>
                             <input type="file" name="uploadproduct" id="uploadproduct" className='uploadproduct' />
                         </div>
-                        <button className="productButton">Update</button>
+
                     </div>
 
                 </form>
+
+            </div>
+
+            <div className="outer">
+                <div className="inner">
+                    <button className="cancelBtn">Cancel</button>
+
+                    <button
+                        onClick={onSubmit}
+                        type='submit'
+                        className="updateBtn"
+                    >Update </button>
+
+
+                </div>
             </div>
         </div>
     )

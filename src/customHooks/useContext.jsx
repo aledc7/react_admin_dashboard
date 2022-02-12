@@ -22,6 +22,7 @@ function useContext() {
     const todosFiltered = todos.filter(todo => todo.name.toLowerCase().includes(searchValue.toLowerCase()));
     
     const [newTodoValue, setNewTodoValue] = React.useState('');
+    const [productName, setProductName] = React.useState('');
     const [isUpdate, setIsUpdate] = React.useState(false);
     const [idEditado, setIdEditado] = React.useState(false);
 
@@ -104,6 +105,7 @@ function useContext() {
             // borro cualquier valor en el input de agregar
             // asi la proxima aparece en blanco.
             setNewTodoValue('');
+            setProductName('');
 
             saveTodos(newTodos);
 
@@ -144,7 +146,27 @@ function useContext() {
     }
 
 
-    function editTodo(id, text, setOpenModal, setIsUpdate, setIdEditado) {
+    function editTodo( productName ) {
+
+        alert(productName);
+
+        // seteo el estado de que es un EDIT, para que lo reciba  'addTodo' y sepa que NO es un insert.
+        setIsUpdate(true);
+        
+        // seteo el estado del Id que el usuario quiere editar para que lo use 'addTodo'.
+        //setIdEditado(id);
+
+        // abro el modal de creacion de tareas
+        // setOpenModal(openModal => !openModal);
+
+        
+        // seteo la tarea clickeada en el modal para que el usuario la edite.  
+        // setNewTodoValue(text);
+        setProductName(productName); // PONER DATO A ACTUALIZAR
+    }
+
+    
+    function editTodo_old(id, productName, text, setOpenModal, setIsUpdate, setIdEditado) {
 
         // seteo el estado de que es un EDIT, para que lo reciba  'addTodo' y sepa que NO es un insert.
         setIsUpdate(true);
@@ -158,6 +180,7 @@ function useContext() {
         
         // seteo la tarea clickeada en el modal para que el usuario la edite.  
         setNewTodoValue(text);
+        setProductName(productName); // PONER DATO A ACTUALIZAR
     }
 
 
@@ -186,6 +209,8 @@ function useContext() {
         setOpenModal,
         newTodoValue,
         setNewTodoValue,
+        productName,
+        setProductName,
         isUpdate,
         setIsUpdate,
         idEditado,

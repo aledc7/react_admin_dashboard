@@ -133,12 +133,32 @@
     align-items: center;
 }
 
-.productButton {
+.updateBtn {
     border: none;
-    padding: 5px;
+    padding: 7px;
     border-radius: 5px;
-    background-color: darkblue;
+    background-color: #2196f3;
     color: white;
-    font-weight: 600;
+    font-weight: 900;
     cursor: pointer;
+    margin-left: 10px;
+}
+.cancelBtn {
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: #C33F38;
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+
+/* Centrado de Botones */
+.inner {
+    display: table;
+    margin: 0 auto;
+}
+.outer {
+    width:100%
 }

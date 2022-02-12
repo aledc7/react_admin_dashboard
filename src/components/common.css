@@ -6,19 +6,34 @@
 
 .colores {
     color: rgb(241,181,63);
+    color:#F1B53F;
     
 
     color: rgb(136,178,83);
+    color:#88B253;
 
     /* MUI */
     color: rgb(76,152,79); 
+    color:#4C984F;
 
     color: rgb(156,160,164);
+    color: #9CA0A4;
 
     color: rgb(41,41,41);
+    color: #292929;
 
     color: rgb(212,72,61);
+    color: #D4483D;
+
+    /* MUI */
+    color: #2196f3;
+    color: #1769aa;
+    color:#4dabf5;
+
+    
    
    /* MUI */
     color: rgb(195,63,56);
+    color:#C33F38;
 }
+

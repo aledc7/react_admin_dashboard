@@ -16,7 +16,11 @@ import { useContext } from "../../customHooks/useContext.jsx";
 
 
 function App() {
-  const { openInNewTab } = useContext();
+  const { 
+      openInNewTab,
+      productName,
+      setProductName,
+   } = useContext();
 
 
   return (
@@ -41,7 +45,7 @@ function App() {
           <Route path='/user/:userID' element={<User />} />
           <Route path='/user/newUser' element={<NewUser />} />
           <Route path='/products' element={<Productlist />} />
-          <Route path='/product/:productID' element={<Product />} />
+          <Route path='/product/:productID' element={<Product productName={productName}></Product>  } />
           <Route path='/newProduct' element={<NewProduct />} />
         </Routes>
         
