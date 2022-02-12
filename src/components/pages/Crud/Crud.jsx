@@ -1,6 +1,7 @@
 import React from 'react';
 // import 'semantic-ui-css/semantic.min.css';
 import './crud.css';
+import { Create } from './Create.jsx';
 
 
 
@@ -10,7 +11,7 @@ function Crud() {
     return (
         <div className="main">
             <div className="main">
-                <h2 className="main-header">React Crud Operations</h2>
+                <Create/>
             </div>
         </div>
     )
