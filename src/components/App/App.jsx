@@ -47,6 +47,7 @@ function App() {
           <Route path='/products' element={<Productlist />} />
           <Route path='/product/:productID' element={<Product productName={productName}></Product>  } />
           <Route path='/newProduct' element={<NewProduct />} />
+          <Route path='/crud' element={<NewProduct />} />
         </Routes>
         
       </Box>

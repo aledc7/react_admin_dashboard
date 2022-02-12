@@ -57,6 +57,13 @@ function Sidebar({ openInNewTab }) {
                             </NavLink>
                         </li>
 
+                        <li>
+                            <NavLink className={({ isActive }) => isActive ? 'link sidebarListItem active' : 'link sidebarListItem'} to='/crud'>
+                                <Storefront className='sidebarIcon' />
+                                CRUD
+                            </NavLink>
+                        </li>
+
                     </ul>
                 </div>
                 <div className="sidebarMenu">

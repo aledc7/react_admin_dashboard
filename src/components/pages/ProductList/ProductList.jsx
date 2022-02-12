@@ -134,12 +134,6 @@ function Productlist() {
                     disableSelectionOnClick
                 />
             </div>
-
-            <div style={{ height: 400, width: 1000 }}>
-                <Tableresponsive/>
-            </div>
-
-
         </div>
     )
 }
