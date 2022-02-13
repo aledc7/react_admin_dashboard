@@ -12,6 +12,7 @@ import { Product } from '../pages/Product/Product.jsx';
 import { NewProduct } from '../pages/NewProduct/NewProduct.jsx';
 import { useContext } from "../../customHooks/useContext.jsx";
 import { Crud } from '../pages/Crud/Crud.jsx';
+import { Update } from "../pages/Crud/Update/Update.jsx";
 
 // import { Modal } from "../Modal/Modal.jsx";
 
@@ -49,6 +50,7 @@ function App() {
           <Route path='/product/:productID' element={<Product productName={productName}></Product>  } />
           <Route path='/newProduct' element={<NewProduct />} />
           <Route path='/crud' element={<Crud />} />
+          <Route path='/update' element={<Update />} />
         </Routes>
         
       </Box>

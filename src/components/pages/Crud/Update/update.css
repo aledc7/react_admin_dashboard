@@ -1,0 +1,17 @@
+.update-form label{
+    color: whitesmoke !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px !important;
+}
+
+.main {
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-header{
+    font-family: 'Montserrat', sans-serif;
+}
