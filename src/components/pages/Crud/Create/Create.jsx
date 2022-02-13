@@ -29,7 +29,6 @@ function Create() {
 
 
     const getData = () => {
-        //axios.get(`https://6208161622c9e90017d3301d.mockapi.io/ReactApp`)
         axios.get(`http://localhost:3000/users/`)
             .then((getData) => {
                 console.log(getData);

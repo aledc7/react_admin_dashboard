@@ -55,7 +55,7 @@ function Update() {
 
     const [APIData, setAPIData] = useState([]);
     useEffect(() => {
-        axios.get(`https://6208161622c9e90017d3301d.mockapi.io/ReactApp`)
+        axios.get(`http://localhost:3000/users/`)
             .then((response) => {
                 setAPIData(response.data);
             })

@@ -12,14 +12,13 @@ import {
     Build,
     Equalizer,
     AddReaction,
-    Storefront,
     Home,
     GitHub,
-    SentimentSatisfiedAlt,
-
-
 } from '@mui/icons-material';
 
+
+import { MdStorage } from "react-icons/md";
+import { SiNestjs } from "react-icons/si";
 import { NavLink } from "react-router-dom";
 import { SiRedux } from "react-icons/si";
 
@@ -52,15 +51,15 @@ function Sidebar({ openInNewTab }) {
 
                         <li>
                             <NavLink className={({ isActive }) => isActive ? 'link sidebarListItem active' : 'link sidebarListItem'} to='/products'>
-                                <Storefront className='sidebarIcon' />
-                                Products
+                                <MdStorage className='sidebarIcon' />
+                                LocalStorage
                             </NavLink>
                         </li>
 
                         <li>
                             <NavLink className={({ isActive }) => isActive ? 'link sidebarListItem active' : 'link sidebarListItem'} to='/crud'>
-                                <Storefront className='sidebarIcon' />
-                                CRUD
+                                <SiNestjs className='sidebarIcon' />
+                                NEST
                             </NavLink>
                         </li>
 
