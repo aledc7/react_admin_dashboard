@@ -1,21 +1,16 @@
 import { React, useEffect, useState } from 'react';
-import { Button, Checkbox, Form, Table } from 'semantic-ui-react';
+import { Button, Form } from 'semantic-ui-react';
 import './create.css';
 import axios from 'axios';
-import { DeleteForever, Edit, AddCircle } from '@mui/icons-material';
-import { Link } from 'react-router-dom';
-
+import { useNavigate } from "react-router-dom";
 
 
 
 
 function Create() {
 
-    
+    var navigate = useNavigate();
 
-
-
-    
     // Creo el estado para leer la API NEST
     const [APIData, setAPIData] = useState([]);
 
@@ -23,7 +18,6 @@ function Create() {
     const getData = () => {
         axios.get(`http://localhost:3000/users/`)
             .then((getData) => {
-                console.log(getData);
                 setAPIData(getData.data);
             })
     }
@@ -37,15 +31,6 @@ function Create() {
     }, []);
 
 
-    
-
-    
-
-
-    
-    
-
-
     const [email, setEmail] = useState('');
     const [role, setRole] = useState('');
     const [password, setPassword] = useState('');
@@ -57,11 +42,16 @@ function Create() {
             email,
             role,
             password
+        },{
+            headers: { 'Content-Type': 'application/json' }
+
+            // REDIRIJO A LA PAGINA DE USUARIOS   
         }).then(() => {
             getData();
             setEmail('');
             setRole('');
             setPassword('');
+            navigate('/crud');
         })
 
     }

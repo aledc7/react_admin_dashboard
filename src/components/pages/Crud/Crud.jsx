@@ -1,9 +1,9 @@
 import './crud.css';
 import { React, useEffect, useState } from 'react';
-import { Button, Checkbox, Form, Table } from 'semantic-ui-react';
+import { Button, Table } from 'semantic-ui-react';
 import axios from 'axios';
 
-import { DeleteForever, Edit, AddCircle } from '@mui/icons-material';
+import { DeleteForever, Edit } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 
 import {
@@ -80,9 +80,6 @@ function Crud() {
                         </Table.Row>
                     </Table.Header>
 
-
-
-
                     <Table.Body>
                         {APIData.map((data, i) => {
                             return (
@@ -91,9 +88,6 @@ function Crud() {
                                     <Table.Cell>{data.email}</Table.Cell>
                                     <Table.Cell>{data.role}</Table.Cell>
                                     <Table.Cell>{data.customer}</Table.Cell>
-                                    {/* <Table.Cell>{data.firstName}</Table.Cell>
-                                    <Table.Cell>{data.lastName}</Table.Cell>
-                                    <Table.Cell>{data.checkbox ? 'Checked' : 'Unchecked'}</Table.Cell> */}
 
                                     <Table.Cell>
                                         <Link to='/update'>

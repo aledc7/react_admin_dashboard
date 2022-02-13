@@ -9,8 +9,7 @@ function useLocalStorage( itemName, initalValue ) {
 
     React.useEffect(() => {
         try {
-
-
+            
             // traigo del local storage la clave que le pasé: 'ADMIN_DASHBOARD'
             const localStorageItem = localStorage.getItem(itemName);
             
