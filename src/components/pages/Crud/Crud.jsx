@@ -58,12 +58,12 @@ function Crud() {
         <div className="main">
             <h2>Usuarios API NestJS Propia</h2>
                 <div className='actionBtn'>
-                    <Link to='/newProduct'>
+                    {/* <Link to='/newProduct'>
                         <MdCloudDownload className='addCircle' />
                     </Link>
                     <Link to='/newProduct'>
                         <MdSearch className='addCircle' />
-                    </Link>
+                    </Link> */}
                     <Link to='/create'>
                         <MdAddCircle className='addCircle' />
                     </Link>

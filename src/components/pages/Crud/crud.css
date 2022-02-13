@@ -9,3 +9,17 @@
 .main-header{
     font-family: 'Montserrat', sans-serif;
 }
+
+.addCircle{
+    color: rgb(53,119,203);
+    color: rgb(76,152,79);
+    font-size: 45px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.addCircle:hover{
+    color: rgb(21, 58, 106);
+    color: rgb(51	105	60);
+    box-shadow: 5px 5px 5px 5px solid black;
+}
