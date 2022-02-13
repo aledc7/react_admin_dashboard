@@ -11,15 +11,7 @@ import { Link } from 'react-router-dom';
 
 function Create() {
 
-    // Creo el Local Storage
-    const setData = (data) => {
-        let { id, email, password, role, customer } = data;
-        localStorage.setItem('id', id);
-        localStorage.setItem('email', email);
-        localStorage.setItem('password', password);
-        localStorage.setItem('role', role);
-        localStorage.setItem('customerId', customer)
-    }
+    
 
 
 
@@ -37,24 +29,21 @@ function Create() {
     }
 
 
-    const onDelete = (id) => {
-        axios.delete(`http://localhost:3000/users/${id}`)
-            .then(() => {
-                getData();
-            })
-    }
-
-    
-
-
-    
     useEffect(() => {
-       // axios.get(`https://6208161622c9e90017d3301d.mockapi.io/ReactApp`)
         axios.get(`http://localhost:3000/users/`)
             .then((response) => {
                 setAPIData(response.data);
             })
-    }, [])
+    }, []);
+
+
+    
+
+    
+
+
+    
+    
 
 
     const [email, setEmail] = useState('');
@@ -78,7 +67,7 @@ function Create() {
     }
 
     return (
-        <>
+        <div className="main">
             <h1>Crear Usuario</h1>
             <Form className="create-form">
                 
@@ -100,54 +89,7 @@ function Create() {
                 
                 <Button onClick={ postData } type='submit'>Submit</Button>
             </Form>
-
-            <div className='dataGridAPI'>
-                <Table singleLine>
-                    <Table.Header>
-                        <Table.Row>
-                            <Table.HeaderCell>Id</Table.HeaderCell>
-                            <Table.HeaderCell>email</Table.HeaderCell>
-                            <Table.HeaderCell>Role</Table.HeaderCell>
-                            <Table.HeaderCell>Customer</Table.HeaderCell>
-                            {/* <Table.HeaderCell>Last Name</Table.HeaderCell>
-                            <Table.HeaderCell>Checked</Table.HeaderCell>
-                            <Table.HeaderCell>Update</Table.HeaderCell> */}
-                        </Table.Row>
-                    </Table.Header>
-
-
-
-
-                    <Table.Body>
-                        {APIData.map((data, i) => {
-                            return (
-                                <Table.Row key={i}>
-                                    <Table.Cell>{data.id}</Table.Cell>
-                                    <Table.Cell>{data.email}</Table.Cell>
-                                    <Table.Cell>{data.role}</Table.Cell>
-                                    <Table.Cell>{data.customer}</Table.Cell>
-                                    {/* <Table.Cell>{data.firstName}</Table.Cell>
-                                    <Table.Cell>{data.lastName}</Table.Cell>
-                                    <Table.Cell>{data.checkbox ? 'Checked' : 'Unchecked'}</Table.Cell> */}
-
-                                    <Table.Cell>
-                                        <Link to='/update'>
-                                            <Button onClick={() => setData(data)}> <Edit /> </Button>
-                                        </Link>
-                                    </Table.Cell>
-
-                                    <Table.Cell>
-                                        <Button onClick={() => onDelete(data.id)}><DeleteForever /></Button>
-                                    </Table.Cell>
-
-                                </Table.Row>
-                            )
-                        })}
-                    </Table.Body>
-                </Table>
-            </div>
-
-        </>
+        </div>
 
 
     )
