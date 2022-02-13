@@ -13,23 +13,42 @@ function Update() {
 
     let navigate = useNavigate();
 
+    const [email, setEmail] = useState('');
+    const [role, setRole] = useState('');
+    const [id, setId] = useState('');
+    const [password, setPassword] = useState('');
+    const [customerId, setCustomerId] = useState('');
+
+
     const updateAPIData = () => {
-        axios.put(`https://6208161622c9e90017d3301d.mockapi.io/ReactApp/${id}`, {
-            firstName,
-            lastName,
-            checkbox
+        
+        
+        // HAGO EL UPDATE
+        axios.put(`http://localhost:3000/users/${id}`, {
+            email,
+            role,
+        },
+        
+        // LE PASO LA CABECERA
+        {
+            headers: {'Content-Type': 'application/json'}
+
+         // REDIRIJO A LA PAGINA DE USUARIOS   
         }).then(() => {
             navigate('/crud')
         })
     }
 
-    const [id, setID] = useState(null);
+
+    
+
 
     useEffect(() => {
-        setID(localStorage.getItem('ID'))
-        setFirstName(localStorage.getItem('First Name'));
-        setLastName(localStorage.getItem('Last Name'));
-        setCheckbox(localStorage.getItem('Checkbox Value'))
+        setId(localStorage.getItem('id'))
+        setEmail(localStorage.getItem('email'));
+        setRole(localStorage.getItem('role'));
+       // setPassword(localStorage.getItem('password'));
+       // setCustomerId(localStorage.getItem('customerId'))
     }, []);
 
 
@@ -44,9 +63,7 @@ function Update() {
     }, [])
 
 
-    const [firstName, setFirstName] = useState('');
-    const [lastName, setLastName] = useState('');
-    const [checkbox, setCheckbox] = useState(false);
+    
 
 
 
@@ -55,16 +72,26 @@ function Update() {
             <h1>Editar Usuario</h1>
             <Form className="update-form">
                 <Form.Field>
-                    <label>First Name</label>
-                    <input placeholder='First Name' value={firstName} onChange={(e) => setFirstName(e.target.value)} />
+                    <label>Email</label>
+                    <input placeholder='email@email.com' value={email} onChange={(e) => setEmail(e.target.value)} />
                 </Form.Field>
+
                 <Form.Field>
-                    <label>Last Name</label>
-                    <input placeholder='Last Name' value={lastName} onChange={(e) => setLastName(e.target.value)} />
+                    <label>Role</label>
+                    <input placeholder='set your password' value={role} onChange={(e) => setRole(e.target.value)} />
                 </Form.Field>
+
+                {/* <Form.Field>
+                    <label>Password</label>
+                    <input placeholder='set your password' value={password} onChange={(e) => setRole(e.target.value)} />
+                </Form.Field>
+
                 <Form.Field>
-                    <Checkbox label='I agree to the Terms and Conditions' checked={!!checkbox} onChange={(e) => setCheckbox(!checkbox)} />
-                </Form.Field>
+                    <label>Customer Id</label>
+                    <input placeholder='set your password' value={customerId} onChange={(e) => setCustomerId(e.target.value)} />
+                </Form.Field> */}
+
+
                 <Button type='submit' onClick={updateAPIData}>Update</Button>
             </Form>
         </div>
