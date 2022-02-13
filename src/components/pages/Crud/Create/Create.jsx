@@ -60,7 +60,7 @@ function Create() {
 
     const [email, setEmail] = useState('');
     const [role, setRole] = useState('');
-    const [password, setPassword] = useState(false);
+    const [password, setPassword] = useState('');
 
 
     // creo el nuevo usuario en la APi
@@ -73,6 +73,7 @@ function Create() {
             getData();
             setEmail('');
             setRole('');
+            setPassword('');
         })
 
     }
@@ -84,17 +85,17 @@ function Create() {
                 
                 <Form.Field>
                     <label>Email</label>
-                    <input placeholder='First Name' onChange={(e) => setEmail(e.target.value)} />
+                    <input placeholder='Email' onChange={(e) => setEmail(e.target.value)} value={ email } />
                 </Form.Field>
 
                 <Form.Field>
                     <label>Role</label>
-                    <input placeholder='Last Name' onChange={(e) => setRole(e.target.value)} />
+                    <input placeholder='Role' onChange={(e) => setRole(e.target.value)} value={ role } />
                 </Form.Field>
 
                 <Form.Field>
                     <label>Password</label>
-                    <input placeholder='Password' onChange={(e) => setPassword(e.target.value)} />
+                    <input placeholder='Password' type='password' onChange={(e) => setPassword(e.target.value)} value={ password } />
                 </Form.Field>
 
                 
