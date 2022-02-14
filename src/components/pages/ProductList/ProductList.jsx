@@ -11,7 +11,7 @@ import {
     MdCloudDownload,
 } from "react-icons/md";
 
-import { Tableresponsive } from '../../TableResponsive/TableResponsive.jsx';
+import { Tableresponsive } from '../../TableResponsive/TableBt.jsx';
 
 
 

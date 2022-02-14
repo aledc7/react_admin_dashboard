@@ -16,6 +16,9 @@ import {
     GitHub,
 } from '@mui/icons-material';
 
+import { ImTable2 } from "react-icons/im";
+
+
 
 import { MdStorage } from "react-icons/md";
 import { SiNestjs } from "react-icons/si";
@@ -70,8 +73,8 @@ function Sidebar({ openInNewTab }) {
                     <ul className="sidebarList">
 
                         <li className="sidebarListItem">
-                            <FingerprintSharp className='sidebarIcon' />
-                            Inasistencias
+                            <ImTable2 className='sidebarIcon' />
+                            Table Responsive
                         </li>
 
                         <li className="sidebarListItem">

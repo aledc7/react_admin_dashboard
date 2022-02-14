@@ -14,6 +14,7 @@ import { useContext } from "../../customHooks/useContext.jsx";
 import { Crud } from '../pages/Crud/Crud.jsx';
 import { Create } from '../pages/Crud/Create/Create.jsx';
 import { Update } from "../pages/Crud/Update/Update.jsx";
+import { TableBt } from "../TableResponsive/TableBt.jsx";
 
 // import { Modal } from "../Modal/Modal.jsx";
 
@@ -53,6 +54,7 @@ function App() {
           <Route path='/crud' element={<Crud />} />
           <Route path='/create' element={<Create/>} />
           <Route path='/update' element={<Update />} />
+          <Route path='/table' element={<TableBt />} />
         </Routes>
         
       </Box>
