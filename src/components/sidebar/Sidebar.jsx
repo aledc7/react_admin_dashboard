@@ -37,14 +37,14 @@ function Sidebar({ openInNewTab }) {
                     <ul className="sidebarList">
 
 
-                        
+
                         <li>
                             <NavLink className={({ isActive }) => isActive ? 'link sidebarListItem active' : 'link sidebarListItem'} to='/'>
                                 <Home className='sidebarIcon' />
                                 Home
                             </NavLink>
                         </li>
-                        
+
                         <li>
                             <NavLink className={({ isActive }) => isActive ? 'link sidebarListItem active' : 'link sidebarListItem'} to='/users'>
                                 <People className='sidebarIcon' />
@@ -72,9 +72,11 @@ function Sidebar({ openInNewTab }) {
                     <h3 className="sidebarTitle">Backoffice</h3>
                     <ul className="sidebarList">
 
-                        <li className="sidebarListItem">
-                            <ImTable2 className='sidebarIcon' />
-                            Table Responsive
+                        <li>
+                            <NavLink className={({ isActive }) => isActive ? 'link sidebarListItem active' : 'link sidebarListItem'} to='/table'>
+                                <ImTable2 className='sidebarIcon' />
+                                Table Responsive
+                            </NavLink>
                         </li>
 
                         <li className="sidebarListItem">
